@@ -17,8 +17,7 @@ public class MainActivity extends Activity {
         
     }
 
-    
-    public void click1(View v){
+    public void fragment1(){
     	//1.创建fragment对象
     	Fragment01 fragment1 = new Fragment01();
     	//2.获取fragment管理器
@@ -29,6 +28,9 @@ public class MainActivity extends Activity {
     	ft.replace(R.id.fl, fragment1);
     	//5.提交
     	ft.commit();
+    }
+    public void click1(View v){
+    	MainActivity.this.fragment1();
     }
     public void click2(View v){
     	//1.创建fragment对象
